@@ -1,7 +1,7 @@
-Name: Saugat Khanal
-UWE ID: 24071160
-Course: Bsc. (Hons) Computing
-Level/Section: L3 Sem 2 / A
+Name: Saugat Khanal\n
+UWE ID: 24071160\n
+Course: Bsc. (Hons) Computing\n
+Level/Section: L3 Sem 2 / A\n
 
-Module Name: Internet Technologies
+Module Name: Internet Technologies\n
 Portfolio Project
