@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
   <link rel="icon" type="Image" href="assets/img/favicon.ico">
+  <script src="assets/js/script.js"></script>
     <title>Contact Me</title>
 </head>
 <body>
@@ -46,19 +47,19 @@
                 <div class="form-group">
                   <label for="name">Name*</label>
                   <input type="text" id="name" name="name" />
-                  <div class="error" id="error-name"></div>
+                  <div class="error" id="error-name" style="margin-top: 1px;"></div>
                 </div>
             
                 <div class="form-group">
                   <label for="email">Email*</label>
                   <input type="email" id="email" name="email" />
-                  <div class="error" id="error-email"></div>
+                  <div class="error" id="error-email" style="margin-top: 1px;"></div>
                 </div>
             
                 <div class="form-group">
                   <label for="phone">Phone Number*</label>
                   <input type="tel" id="phone" name="phone" />
-                  <div class="error" id="error-phone"></div>
+                  <div class="error" id="error-phone" style="margin-top: 1px;"></div>
                 </div>
             
                 <div class="form-group">
@@ -77,7 +78,7 @@
 
         <footer class="footer-custom container">
           <div class="columns is-vcentered">
-            <!-- Left Side: Navigation Links -->
+
             <div class="column is-half has-text-left">
               <nav class="footer-links">
                 <a href="index.html">Home</a>
@@ -89,7 +90,7 @@
               </nav>
             </div>
         
-            <!-- Right Side: Copyright -->
+
             <div class="column is-half has-text-centered-touch has-text-right">
               <p>&copy; 2025 Saugat Khanal. All rights reserved.</p>
             </div>
@@ -163,47 +164,5 @@
       margin-bottom: 10px;
     }
 			</style>
-
-            <script>
-                    function validateForm() {
-      let valid = true;
-
-      // Clear previous errors
-      document.getElementById('error-name').innerText = '';
-      document.getElementById('error-email').innerText = '';
-      document.getElementById('error-phone').innerText = '';
-
-      // Get values
-      const name = document.getElementById('name').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const phone = document.getElementById('phone').value.trim();
-
-      // Validate Name
-      if (name === '') {
-        document.getElementById('error-name').innerText = 'Name is required.';
-        valid = false;
-      }
-
-      // Validate Email
-      if (email === '') {
-        document.getElementById('error-email').innerText = 'Email is required.';
-        valid = false;
-      } else if (!/^\S+@\S+\.\S+$/.test(email)) {
-        document.getElementById('error-email').innerText = 'Email is invalid.';
-        valid = false;
-      }
-
-      // Validate Phone
-      if (phone === '') {
-        document.getElementById('error-phone').innerText = 'Phone number is required.';
-        valid = false;
-      } else if (!/^\d{7,15}$/.test(phone)) {
-        document.getElementById('error-phone').innerText = 'Enter a valid phone number.';
-        valid = false;
-      }
-
-      return valid;
-    }
-            </script>
 </body>
 </html>
