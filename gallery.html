@@ -30,17 +30,35 @@
 			</div>
 
 			<div class="nav-right nav-menu">
-                <a class="nav-item" href="index.html">Home</a>
+				<a class="nav-item" href="index.html">Home</a>
 				<a class="nav-item" href="about.html">About Me</a>
 				<a class="nav-item" href="projects.html">Projects</a>
-                <a class="nav-item" href="gallery.html">Gallery</a>
 				<a class="nav-item" href="contact.html">Contact</a>
-				<!-- <a class="nav-item"  href="#social">Contact</a> -->
+				<a class="nav-item" href="gallery.html">Snaps 📸</a>
+				<a class="nav-item" href="https://www.cloudserviceforce.com/">Latest Project</a>
 			</div>
 
 		</nav>
         <section style="background-color: white;">
-            <h1 style="color: black;">Gallery</h1>
+			
+  <div class="gallery-title">Here's some of the Photos I've taken over the years 📸</div>
+
+  <div class="gallery-wrapper"> 
+    <div class="gallery-grid">
+      <div class="gallery-item"><img src="assets/img/photo-grid-1.jpg" alt="Photo 1"></div>
+      <div class="gallery-item tall"><img src="assets/img/photo-grid-2.jpg" alt="Photo 2"></div>
+      <div class="gallery-item"><img src="assets/img/photo-grid-3.jpg" alt="Photo 3"></div>
+      <div class="gallery-item"><img src="assets/img/photo-grid-4.jpg" alt="Photo 4"></div>
+      <div class="gallery-item tall"><img src="assets/img/photo-grid-5.jpg" alt="Photo 5"></div>
+      <div class="gallery-item"><img src="assets/img/photo-grid-6.jpg" alt="Photo 6"></div>
+      <div class="gallery-item"><img src="assets/img/photo-grid-7.jpg" alt="Photo 7"></div>
+      <div class="gallery-item tall"><img src="assets/img/photo-grid-8.jpg" alt="Photo 8"></div>
+      <div class="gallery-item"><img src="assets/img/photo-grid-9.jpg" alt="Photo 9"></div>
+      <div class="gallery-item"><img src="assets/img/photo-grid-10.jpg" alt="Photo 10"></div>
+      <div class="gallery-item tall"><img src="assets/img/photo-grid-11.jpg" alt="Photo 11"></div>
+      <div class="gallery-item"><img src="assets/img/photo-grid-12.jpg" alt="Photo 12"></div>
+    </div>
+  </div>
         </section>
 
 		<footer class="footer-custom container">
@@ -51,8 +69,9 @@
 						<a href="index.html">Home</a>
 						<a href="about.html">About Me</a>
 						<a href="projects.html">Projects</a>
-						<a href="gallery.html">Gallery</a>
 						<a href="contact.html">Contact</a>
+						<a href="gallery.html">Snaps 📸</a>
+						<a href="https://www.cloudserviceforce.com/">Latest Project</a>
 					</nav>
 				</div>
 		
@@ -64,6 +83,46 @@
 		</footer>
 		<style>
 			@import url('https://fonts.googleapis.com/css2?family=Asap:wght@500&family=Mulish:wght@600&display=swap');
+			.gallery-title {
+      text-align: center;
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 2em;
+      margin-top: 40px;
+      color: #333;
+    }
+
+    .gallery-wrapper {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 15px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.04);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .gallery-item.tall {
+      grid-row: span 2;
+    }
+
+    .gallery-item img {
+      height: 100%;
+      object-fit: cover;
+    }
 			</style>
 </body>
 </html>
